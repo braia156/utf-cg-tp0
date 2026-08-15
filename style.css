@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap');
+
+:root {
+    --bg-color: #f4f4f0;
+    --card-bg: #ffffff;
+    --text-primary: #121212;
+    --text-secondary: #555555;
+    --accent: #ff5e36;
+    --accent-hover: #e04a25;
+    --border-dark: #121212;
+    --shadow: 5px 5px 0px #121212;
+    --shadow-btn: 3px 3px 0px #121212;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-primary);
+    font-family: 'Space Grotesk', sans-serif;
+    line-height: 1.6;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    max-width: 800px;
+    width: 100%;
+}
+
+header {
+    background: var(--card-bg);
+    border: 3px solid var(--border-dark);
+    box-shadow: var(--shadow);
+    padding: 24px;
+    margin-bottom: 28px;
+}
+
+#nome {
+    font-size: 2.2rem;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+
+.tagline {
+    font-size: 1rem;
+    color: var(--text-secondary);
+    font-weight: 600;
+    margin-top: 4px;
+}
+
+.perfil {
+    background: var(--card-bg);
+    border: 3px solid var(--border-dark);
+    box-shadow: var(--shadow);
+    padding: 30px;
+    margin-bottom: 28px;
+}
+
+.foto-box {
+    float: left;
+    margin-right: 25px;
+    margin-bottom: 15px;
+}
+
+#foto {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border: 3px solid var(--border-dark);
+    box-shadow: 4px 4px 0px var(--accent);
+    border-radius: 8px;
+    display: block;
+}
+
+.bio h2 {
+    font-size: 1.6rem;
+    margin-bottom: 12px;
+    color: var(--text-primary);
+}
+
+.bio h3 {
+    font-size: 1.25rem;
+    margin: 22px 0 8px 0;
+    padding-bottom: 4px;
+    border-bottom: 2px dashed var(--border-dark);
+    color: var(--accent);
+}
+
+.bio p {
+    font-size: 1rem;
+    margin-bottom: 14px;
+    color: #222;
+}
+
+.bio strong {
+    background: #ffe599;
+    padding: 0 4px;
+    border-radius: 2px;
+}
+
+.bio em {
+    font-style: italic;
+    color: var(--text-secondary);
+}
+
+.interacao {
+    text-align: center;
+    margin-top: 10px;
+    clear: both;
+}
+
+#botao-misterioso {
+    background-color: var(--accent);
+    color: #ffffff;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    padding: 14px 32px;
+    border: 3px solid var(--border-dark);
+    box-shadow: var(--shadow-btn);
+    cursor: pointer;
+    border-radius: 6px;
+    transition: transform 0.1s ease, box-shadow 0.1s ease, background-color 0.2s ease;
+}
+
+#botao-misterioso:hover {
+    background-color: var(--accent-hover);
+    transform: translate(-2px, -2px);
+    box-shadow: 5px 5px 0px var(--border-dark);
+}
+
+#botao-misterioso:active {
+    transform: translate(2px, 2px);
+    box-shadow: 1px 1px 0px var(--border-dark);
+}
+
+@media (max-width: 600px) {
+    .foto-box {
+        float: none;
+        display: flex;
+        justify-content: center;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    #nome {
+        font-size: 1.8rem;
+    }
+}
