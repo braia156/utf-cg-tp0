@@ -26,6 +26,26 @@ body {
     padding: 40px 20px;
     display: flex;
     justify-content: center;
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+body.dark-mode {
+    --bg-color: #121212;
+    --card-bg: #1e1e1e;
+    --text-primary: #f4f4f0;
+    --text-secondary: #aaaaaa;
+    --border-dark: #f4f4f0;
+    --shadow: 5px 5px 0px #f4f4f0;
+    --shadow-btn: 3px 3px 0px #f4f4f0;
+}
+
+body.dark-mode .bio p {
+    color: #e0e0e0;
+}
+
+body.dark-mode .bio strong {
+    background: #e04a25;
+    color: #ffffff;
 }
 
 .container {
@@ -39,6 +59,7 @@ header {
     box-shadow: var(--shadow);
     padding: 24px;
     margin-bottom: 28px;
+    transition: background-color 0.4s ease, border-color 0.4s ease, box-shadow 0.4s ease;
 }
 
 #nome {
@@ -60,6 +81,7 @@ header {
     box-shadow: var(--shadow);
     padding: 30px;
     margin-bottom: 28px;
+    transition: background-color 0.4s ease, border-color 0.4s ease, box-shadow 0.4s ease;
 }
 
 .foto-box {
@@ -76,6 +98,7 @@ header {
     box-shadow: 4px 4px 0px var(--accent);
     border-radius: 8px;
     display: block;
+    transition: border-color 0.4s ease;
 }
 
 .bio h2 {
@@ -126,7 +149,7 @@ header {
     box-shadow: var(--shadow-btn);
     cursor: pointer;
     border-radius: 6px;
-    transition: transform 0.1s ease, box-shadow 0.1s ease, background-color 0.2s ease;
+    transition: transform 0.1s ease, box-shadow 0.1s ease, background-color 0.2s ease, border-color 0.4s ease;
 }
 
 #botao-misterioso:hover {
